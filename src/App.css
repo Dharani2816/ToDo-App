@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  background: linear-gradient(145deg, #1a1a2e, #16213e, #0f3460);
+
+}
+
+.todo-container {
+    padding: 30px 40px;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #eef4f7;
+}
+
+.todo-container h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.todo-container h1,
+.todo-container h2 {
+    margin-left: 10px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input,
+button {
+    border-radius: 50px;
+    height: 50px;
+    border: none;
+}
+
+button:hover{
+    cursor:pointer;
+}
+input {
+    width: 350px;
+    padding-left: 15px;
+    font-size: 17px;
+    border: 1px solid #dfeef3;
+}
+
+input:focus {
+    border-color: #0D6EFD;
+    outline: none;
+}
+
+.input-container button {
+    background-color: #0D6EFD;
+    padding: 0 25px;
+    color: white;
+    font-size: 16px;
+}
+
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 12px;
+    list-style: none;
+    background: #ffffff;
+    border: 1px solid #dfeef3;
+}
+
+.tasks-container button {
+    background-color: #DC3545;
+    color: white;
+    padding: 0 20px;
+    font-size: 15px;
+}
